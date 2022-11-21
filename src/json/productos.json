@@ -1,0 +1,100 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Detergente Opal Ultra 4.2kg",
+      "precio": 25.4,
+      "img": "./assets/product-1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Suavizante Bolivar 5 litros",
+      "precio": 32.4,
+      "img": "./assets/product-2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Glade Cono Manzana & Canela 170 gr",
+      "precio": 9.4,
+      "img": "./assets/product-3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Detergente Opal Ultra 4.2kg",
+      "precio": 25.4,
+      "img": "./assets/product-4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Ariel revitacolor 9kg",
+      "precio": 94.9,
+      "img": "./assets/product-5.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Desinfectante Sanytol Multiuso 750ml",
+      "precio": 21.9,
+      "img": "./assets/product-6.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Papel higiénico Elite Excellence 65 metros x8",
+      "precio": 24.1,
+      "img": "./assets/product-7.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Dispensador de jabón líquido 450ml",
+      "precio": 18.5,
+      "img": "./assets/product-8.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Limpiavidrios 1 Gl Daryza",
+      "precio": 20.9,
+      "img": "./assets/product-9.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Limpia Vidrios Ventanas Mamparas para Baño Cocina Auto 3 en 1",
+      "precio": 48.9,
+      "img": "./assets/product-10.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Limpiatodo lavanda Sapolio 5 litros",
+      "precio": 15.5,
+      "img": "./assets/product-11.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Cubrerasguños muebles 500ml",
+      "precio": 20.9,
+      "img": "./assets/product-12.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Balde automático Premium",
+      "precio": 149.9,
+      "img": "./assets/product-13.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "Gel Antibacterial Mandarina Ainhoa",
+      "precio": 19,
+      "img": "./assets/product-14.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Lejía tradicional Daryza 1 galón",
+      "precio": 9.5,
+      "img": "./assets/product-15.jpg"
+    },
+    {
+      "id": 16,
+      "nombre": "Detergente Marsella profesional 13.5kg",
+      "precio": 98.9,
+      "img": "./assets/product-16.jpg"
+    }
+  ]
+}
