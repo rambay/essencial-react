@@ -65,10 +65,10 @@ function Slider() {
         </div>
       </div>
       <div className="slider__btn slider__btn--right" onClick={Next}>
-        &#62;
+        <img src="./assets/left-arrow.png" alt="Left" />
       </div>
       <div className="slider__btn slider__btn--left" onClick={Prev}>
-        &#60;
+        <img src="./assets/right-arrow.png" alt="Right" />
       </div>
     </div>
   );
