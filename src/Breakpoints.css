@@ -1,0 +1,16 @@
+.navBar {
+  padding: 20px;
+}
+
+.navBar .logo img {
+  width: 195px;
+}
+
+.iconSocial {
+  display: none;
+}
+
+.productos {
+  padding: 20px;
+  display: initial;
+}

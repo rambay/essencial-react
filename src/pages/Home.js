@@ -4,6 +4,16 @@ import Categories from "../Componentes/Categories";
 import Newsletter from "../Componentes/Newsletter";
 
 function Home() {
+  function zoomIn(e) {
+    e.target.style.transform = "scale(1.02)";
+    e.target.style.transition = "all 0.5s";
+  }
+
+  function zoomOut(e) {
+    e.target.style.transform = "scale(1)";
+    e.target.style.transition = "all 0.5s";
+  }
+
   return (
     <Layout>
       <div className="wrapper">
@@ -43,11 +53,36 @@ function Home() {
       <div className="wrapper">
         <div className="promotionsProducts">
           <div className="containPromotions">
-            <img src="./assets/promocion-1.jpg" alt="Promocion 01" />
-            <img src="./assets/promocion-2.jpg" alt="Promocion 02" />
-            <img src="./assets/promocion-3.jpg" alt="Promocion 03" />
-            <img src="./assets/promocion-4.jpg" alt="Promocion 04" />
-            <img src="./assets/promocion-5.jpg" alt="Promocion 05" />
+            <img
+              src="./assets/promocion-1.jpg"
+              onMouseOver={zoomIn}
+              onMouseOut={zoomOut}
+              alt="Promocion 01"
+            />
+            <img
+              src="./assets/promocion-2.jpg"
+              onMouseOver={zoomIn}
+              onMouseOut={zoomOut}
+              alt="Promocion 02"
+            />
+            <img
+              src="./assets/promocion-3.jpg"
+              onMouseOver={zoomIn}
+              onMouseOut={zoomOut}
+              alt="Promocion 03"
+            />
+            <img
+              src="./assets/promocion-4.jpg"
+              onMouseOver={zoomIn}
+              onMouseOut={zoomOut}
+              alt="Promocion 04"
+            />
+            <img
+              src="./assets/promocion-5.jpg"
+              onMouseOver={zoomIn}
+              onMouseOut={zoomOut}
+              alt="Promocion 05"
+            />
           </div>
         </div>
       </div>

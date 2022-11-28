@@ -1,13 +1,10 @@
 import { useState } from "react";
+import ToolTip from "./ToolTip";
 
 function Newsletter() {
   const [value, setValue] = useState("");
   const [getError, setGetError] = useState({
-    error: "",
-    active: false,
-  });
-  const [getErrorExpresion, setGetErrorExpresion] = useState({
-    error: "",
+    text: "",
     active: false,
   });
 
@@ -18,14 +15,14 @@ function Newsletter() {
     if (value === "") {
       window.event.preventDefault();
       setGetError({
-        error: "El campo email no puede estar vacío",
+        text: "El campo email no puede estar vacío",
         active: true,
       });
     } else {
       if (!emailExpresionRegular.test(value)) {
         window.event.preventDefault();
-        setGetErrorExpresion({
-          error: "El email no es válido",
+        setGetError({
+          text: "El email no es válido",
           active: true,
         });
       }
@@ -35,11 +32,7 @@ function Newsletter() {
   const readValue = (ev) => {
     setValue(ev.target.value);
     setGetError({
-      error: "",
-      active: false,
-    });
-    setGetErrorExpresion({
-      error: "",
+      text: "",
       active: false,
     });
   };
@@ -61,30 +54,17 @@ function Newsletter() {
       </div>
       <div className="newsletter__form">
         <form onSubmit={validate}>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Tu correo electronico..."
-            onKeyUp={readValue}
-          />
-          <input type="submit" value="Enviar" />
-          <span
-            className={
-              getError.active ? "errorEmailActive" : "errorEmailInactive"
-            }
-          >
-            {getError.error}
-          </span>
-          <span
-            className={
-              getErrorExpresion.active
-                ? "errorExpresionEmailActive"
-                : "errorExpresionEmailInactive"
-            }
-          >
-            {getErrorExpresion.error}
-          </span>
+          <div className="boletinForm">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Tu correo electronico..."
+              onKeyUp={readValue}
+            />
+            <input type="submit" value="Enviar" />
+          </div>
+          {getError.active ? <ToolTip message={getError.text} /> : null}
         </form>
       </div>
     </div>
