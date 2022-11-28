@@ -52,21 +52,19 @@ function Newsletter() {
           actualizaciones.
         </p>
       </div>
-      <div className="newsletter__form">
-        <form onSubmit={validate}>
-          <div className="boletinForm">
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Tu correo electronico..."
-              onKeyUp={readValue}
-            />
-            <input type="submit" value="Enviar" />
-          </div>
-          {getError.active ? <ToolTip message={getError.text} /> : null}
-        </form>
-      </div>
+      <form onSubmit={validate}>
+        <div className="boletinForm">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Tu correo electronico..."
+            onKeyUp={readValue}
+          />
+          <input type="submit" value="Enviar" />
+        </div>
+        {getError.active ? <ToolTip message={getError.text} /> : null}
+      </form>
     </div>
   );
 }
