@@ -7,9 +7,13 @@ function Slider() {
     const slider = document.querySelector(".slider");
     slider.insertAdjacentElement("afterbegin", sliderSectionLast.current);
 
-    setInterval(() => {
+    const slide = setInterval(() => {
       Next();
     }, 5000);
+
+    return () => {
+      clearInterval(slide);
+    };
   }, []);
 
   const Next = () => {

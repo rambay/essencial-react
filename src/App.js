@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserProvider from "./context/ProductProvider";
 
 //Estilos
-import "./Breakpoints.css";
 import "./App.css";
+import "./Breakpoints.css";
 
 //Pages
 import Home from "./pages/Home";

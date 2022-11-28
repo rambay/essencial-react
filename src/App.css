@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .navBar .logo img {
@@ -41,7 +41,6 @@ body {
 
 .navBar nav ul li {
   list-style: none;
-  margin: 18px 10px;
 }
 
 .navBar nav ul li a {

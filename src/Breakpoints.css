@@ -1,16 +1,134 @@
-.navBar {
-  padding: 20px;
+@media screen and (min-width: 320px) {
+  .navBar {
+    flex-direction: column;
+    row-gap: 1em;
+  }
+
+  .productos {
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .menuProductos {
+    display: none;
+  }
+
+  .iconSocial {
+    display: none;
+  }
+
+  .search {
+    justify-content: center;
+  }
+
+  .slider__btn img {
+    width: 15px;
+  }
+
+  .titleContent {
+    text-align: center;
+  }
+
+  .titleContent p {
+    max-width: none;
+  }
+
+  .navBar nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    row-gap: 1.5em;
+  }
+
+  .footer {
+    flex-direction: column;
+    row-gap: 2em;
+  }
+
+  .footer nav ul {
+    flex-direction: column;
+    row-gap: 1.2em;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.navBar .logo img {
-  width: 195px;
+@media screen and (min-width: 768px) {
+  .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .navBar nav ul {
+    flex-direction: row;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .navBar .logo img {
+    width: 195px;
+  }
+
+  .navBar nav ul li {
+    margin: 18px 16px;
+  }
+
+  .navBar nav ul li a {
+    font-size: 14px;
+  }
+
+  .productos {
+    padding: 20px;
+    display: block;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer nav ul {
+    flex-direction: row;
+  }
 }
 
-.iconSocial {
-  display: none;
-}
+@media screen and (min-width: 1200px) {
+  .navBar {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
 
-.productos {
-  padding: 20px;
-  display: initial;
+  .navBar nav ul {
+    flex-direction: initial;
+  }
+
+  .navBar nav ul li {
+    margin: 18px 10px;
+  }
+
+  .navBar nav ul li a {
+    font-size: 14px;
+  }
+
+  .iconSocial {
+    display: initial;
+  }
+
+  .titleContent {
+    text-align: left;
+  }
+
+  .menuProductos {
+    display: initial;
+  }
+  .productos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search {
+    justify-content: flex-end;
+  }
 }
