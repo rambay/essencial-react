@@ -16,10 +16,7 @@ function Nosotros() {
           </div>
           <div className="nosotros">
             <div className="nosotros__desripcion">
-              <h3>
-                Lo que nuestra empresa de limpieza puede aportale al
-                contratarnos
-              </h3>
+              <h3>Lo que nuestra empresa de limpieza puede aportale</h3>
               <p>
                 Somos una empresa peruana con más 3 años en el mercado. Nos
                 dedicamos a la fabricación y comercialización de una gran
